@@ -14,7 +14,8 @@ $(TARGETDIR)/ipc_pipe_fork: $(SRCDIR)/ipc_pipe_fork.c
 $(TARGETDIR)/fd_dup2_redirect: $(SRCDIR)/fd_dup2_redirect.c
 	$(cc) $(cflags) -o $@ $<
 
-
+$(TARGETDIR)/ipc_pipe_select: $(SRCDIR)/ipc_pipe_select.c
+	$(cc) $(cflags) -o $@ $<
 
 .PHONY: all
 
