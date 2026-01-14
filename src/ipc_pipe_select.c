@@ -31,8 +31,8 @@ int main(void) {
     fflush(stdout);
 
     for (;;) {
-      fd_set rfds;
-      FD_ZERO(&rfds);
+      fd_set rfds;    // readable file descriptor set
+      FD_ZERO(&rfds); // Initialize the set of file descriptors
       FD_SET(fds[0], &rfds);
 
       struct timeval tv;
@@ -40,6 +40,11 @@ int main(void) {
       tv.tv_usec = 300 * 1000; // 300ms
 
       int nfds = fds[0] + 1;
+      /*
+       * Call select() function to wait for data to be available for reading
+       * writable or exceptional conditions on the file descriptors are not
+       * monitored
+       */
       int r = select(nfds, &rfds, NULL, NULL, &tv);
 
       if (r < 0) {
