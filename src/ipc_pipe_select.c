@@ -13,13 +13,12 @@ static void die(const char *msg) {
 }
 
 int main(void) {
-  int fds[2]; // fds[0]=read end, fds[1]=write end
+  int fds[2];
+
   if (pipe(fds) < 0)
     die("pipe");
 
   pid_t pid = fork();
-  if (pid < 0)
-    die("fork");
 
   if (pid == 0) {
     // Child: reads with select()
@@ -56,7 +55,6 @@ int main(void) {
       if (r == 0) {
         // Timeout: do something else instead of blocking forever.
         printf("child: tick (no data yet)\n");
-        fflush(stdout);
         continue;
       }
 
@@ -89,10 +87,9 @@ int main(void) {
 
   printf("parent (pid=%ld): sleeping 2 seconds, then writing...\n",
          (long)getpid());
-  fflush(stdout);
   sleep(2);
 
-  const char *msg = "hello via select()\n";
+  const char *msg = "hello via select()";
   ssize_t n = write(fds[1], msg, strlen(msg));
   if (n < 0)
     die("write");
