@@ -21,13 +21,12 @@ int main(void) {
   // Make stdout (fd=1), refer to the same kernel-managed object as fd
   if (dup2(fd, STDOUT_FILENO) < 0)
     die("dup2");
-
   // fd is now redundant; stdout points to same underlying object
   if (close(fd) < 0)
     die("close");
 
   printf("After redirect: this should NOT appear on terminal.\n");
-  printf("It shold be written into redirect output.txt instead.\n");
+  printf("It shold be written into redirect_output.txt instead.\n");
 
   // Flush to ensure write happens before exit
   fflush(stdout);
