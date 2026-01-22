@@ -1,35 +1,20 @@
-cc = clang
-cflags = -Wall -Wextra -Werror -g
-SRCDIR = src
-TARGETDIR = bin
+CC := cc
+CFLAGS := -Wall -Wextra -std=c11
+SRC_DIR := src
+BIN_DIR := bin
 
-SOURCES = $(wildcard $(SRCDIR)/*.c)
-TARGETS = $(patsubst $(SRCDIR)/%.c,$(TARGETDIR)/%,$(SOURCES))
+SRCS := $(wildcard $(SRC_DIR)/*.c)
+BINS := $(patsubst $(SRC_DIR)/%.c,$(BIN_DIR)/%,$(SRCS))
 
-all: $(TARGETS)
+all: $(BINS)
 
-$(TARGETDIR)/ipc_pipe_fork: $(SRCDIR)/ipc_pipe_fork.c
-	$(cc) $(cflags) -o $@ $<
+$(BIN_DIR):
+	@mkdir -p $(BIN_DIR)
 
-$(TARGETDIR)/fd_dup2_redirect: $(SRCDIR)/fd_dup2_redirect.c
-	$(cc) $(cflags) -o $@ $<
+$(BIN_DIR)/%: $(SRC_DIR)/%.c | $(BIN_DIR)
+	@$(CC) $(CFLAGS) $< -o $@
 
-$(TARGETDIR)/ipc_pipe_select: $(SRCDIR)/ipc_pipe_select.c
-	$(cc) $(cflags) -o $@ $<
+clearn:
+	rm -rf $(BIN_DIR)
 
-$(TARGETDIR)/pipe_reader: $(SRCDIR)/pipe_reader.c
-	$(cc) $(cflags) -o $@ $<
-
-$(TARGETDIR)/pipe_write: $(SRCDIR)/pipe_write.c
-	$(cc) $(cflags) -o $@ $<
-
-$(TARGETDIR)/uds_client: $(SRCDIR)/uds_client.c
-	$(cc) $(cflags) -o $@ $<
-
-$(TARGETDIR)/uds_server: $(SRCDIR)/uds_server.c
-	$(cc) $(cflags) -o $@ $<
-
-.PHONY: all
-
-
-
+.PHONY: all clearn
