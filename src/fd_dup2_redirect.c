@@ -26,7 +26,7 @@ int main(void) {
     die("close");
 
   printf("After redirect: this should NOT appear on terminal.\n");
-  printf("It shold be written into redirect_output.txt instead.\n");
+  printf("It should be written into redirect_output.txt instead.\n");
 
   // Flush to ensure write happens before exit
   fflush(stdout);
