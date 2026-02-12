@@ -1,8 +1,8 @@
 #define _POSIX_C_SOURCE 200809L
-#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <fcntl.h>  // open, O_WRONLY, O_CREAT, O_TRUNC
+#include <stdio.h>  // perror, printf, fflush, stdout
+#include <stdlib.h> // exit
+#include <unistd.h> // dup2, STDOUT_FILENO, close
 
 static void die(const char *msg) {
   perror(msg);
