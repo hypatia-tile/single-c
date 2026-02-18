@@ -42,6 +42,8 @@ void print_node(Node *node) {
   printf("[ data: %s, ", node->data);
   printf("prev: %s, ", node->prev ? node->prev->data : "NULL");
   printf("next: %s ]\n", node->next ? node->next->data : "NULL");
+  printf("\t[%p, %p, %p]", (void *)node, (void *)node->prev,
+         (void *)node->next);
 }
 
 DoublyLinkedList *new_list() {
@@ -67,6 +69,18 @@ void print_list(DoublyLinkedList *list) {
     printf("\n");
     current = current->next;
   }
+}
+
+void insertBefore(DoublyLinkedList *list, Node *node, const char *data) {
+  Node *new_node = NULL;
+  if (node->prev == NULL) {
+    new_node = create_node(data, NULL, node);
+    list->first = new_node;
+  } else {
+    new_node = create_node(data, node->prev, node);
+    node->prev->next = new_node;
+  }
+  node->prev = new_node;
 }
 
 void insertAfter(DoublyLinkedList *list, Node *node, const char *data) {
@@ -95,12 +109,28 @@ void insertBeginning(DoublyLinkedList *list, const char *data) {
   list->first = new_node;
 }
 
+void insertEnd(DoublyLinkedList *list, const char *data) {
+  Node *new_node = NULL;
+  if (list->last == NULL) {
+    new_node = create_node(data, NULL, NULL);
+    list->first =
+        new_node; // When further nodes are added, the first node will be
+                  // updated, so we can set it to the last node for now.
+  } else {
+    new_node = create_node(data, list->last, NULL);
+    list->last->next = new_node;
+  }
+  list->last = new_node;
+}
+
 int main(void) {
   DoublyLinkedList *list = new_list();
   insertBeginning(list, "Node 1");
   insertAfter(list, list->first, "Node 2");
   insertAfter(list, list->first, "Node 3");
-  print_list(list);
+  insertBefore(list, list->first, "Node 4");
+  insertEnd(list, "Node 5");
+  print_list(list); // Node 4, Node 1, Node 3, Node 2, Node 5
   free_list(list);
   return 0;
 }
