@@ -1,11 +1,11 @@
 	.build_version macos, 26, 0	sdk_version 26, 2
-	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0x2109c36b65464f5b50d6635dde8259c3
+	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0xef0a33a7e0789e1546d51ae59076bc8a
 	.section	__TEXT,__text,regular,pure_instructions
 	.globl	_create_node                    ; -- Begin function create_node
 	.p2align	2
 _create_node:                           ; @create_node
 Lfunc_begin0:
-	.loc	0 16 0                          ; src/doubly_linked_list.c:16:0
+	.loc	0 25 0                          ; src/doubly_linked_list.c:25:0
 	.cfi_startproc
 ; %bb.0:
 	sub	sp, sp, #64
@@ -18,62 +18,62 @@ Lfunc_begin0:
 	stur	x1, [x29, #-16]
 	str	x2, [sp, #24]
 Ltmp0:
-	.loc	0 17 16 prologue_end            ; src/doubly_linked_list.c:17:16
+	.loc	0 26 16 prologue_end            ; src/doubly_linked_list.c:26:16
 	mov	x0, #24                         ; =0x18
 	bl	_malloc
-	.loc	0 17 9 is_stmt 0                ; src/doubly_linked_list.c:17:9
+	.loc	0 26 9 is_stmt 0                ; src/doubly_linked_list.c:26:9
 	str	x0, [sp, #16]
-	.loc	0 18 35 is_stmt 1               ; src/doubly_linked_list.c:18:35
+	.loc	0 27 35 is_stmt 1               ; src/doubly_linked_list.c:27:35
 	ldur	x0, [x29, #-8]
-	.loc	0 18 28 is_stmt 0               ; src/doubly_linked_list.c:18:28
+	.loc	0 27 28 is_stmt 0               ; src/doubly_linked_list.c:27:28
 	bl	_strlen
-	.loc	0 18 17                         ; src/doubly_linked_list.c:18:17
+	.loc	0 27 17                         ; src/doubly_linked_list.c:27:17
 	str	x0, [sp, #8]
-	.loc	0 19 39 is_stmt 1               ; src/doubly_linked_list.c:19:39
+	.loc	0 28 39 is_stmt 1               ; src/doubly_linked_list.c:28:39
 	ldr	x9, [sp, #8]
 	mov	x8, #1                          ; =0x1
-	.loc	0 19 48 is_stmt 0               ; src/doubly_linked_list.c:19:48
+	.loc	0 28 48 is_stmt 0               ; src/doubly_linked_list.c:28:48
 	add	x9, x9, #1
-	.loc	0 19 36                         ; src/doubly_linked_list.c:19:36
+	.loc	0 28 36                         ; src/doubly_linked_list.c:28:36
 	mul	x0, x8, x9
-	.loc	0 19 16                         ; src/doubly_linked_list.c:19:16
+	.loc	0 28 16                         ; src/doubly_linked_list.c:28:16
 	bl	_malloc
-	.loc	0 19 3                          ; src/doubly_linked_list.c:19:3
+	.loc	0 28 3                          ; src/doubly_linked_list.c:28:3
 	ldr	x8, [sp, #16]
-	.loc	0 19 14                         ; src/doubly_linked_list.c:19:14
+	.loc	0 28 14                         ; src/doubly_linked_list.c:28:14
 	str	x0, [x8]
-	.loc	0 20 3 is_stmt 1                ; src/doubly_linked_list.c:20:3
+	.loc	0 29 3 is_stmt 1                ; src/doubly_linked_list.c:29:3
 	ldr	x8, [sp, #16]
 	ldr	x0, [x8]
 	ldur	x1, [x29, #-8]
 	ldr	x2, [sp, #8]
 	mov	x3, #-1                         ; =0xffffffffffffffff
 	bl	___strncpy_chk
-	.loc	0 21 3                          ; src/doubly_linked_list.c:21:3
+	.loc	0 30 3                          ; src/doubly_linked_list.c:30:3
 	ldr	x8, [sp, #16]
-	.loc	0 21 9 is_stmt 0                ; src/doubly_linked_list.c:21:9
+	.loc	0 30 9 is_stmt 0                ; src/doubly_linked_list.c:30:9
 	ldr	x8, [x8]
-	.loc	0 21 14                         ; src/doubly_linked_list.c:21:14
+	.loc	0 30 14                         ; src/doubly_linked_list.c:30:14
 	ldr	x9, [sp, #8]
-	.loc	0 21 3                          ; src/doubly_linked_list.c:21:3
+	.loc	0 30 3                          ; src/doubly_linked_list.c:30:3
 	add	x8, x8, x9
-	.loc	0 21 24                         ; src/doubly_linked_list.c:21:24
+	.loc	0 30 24                         ; src/doubly_linked_list.c:30:24
 	strb	wzr, [x8]
-	.loc	0 22 16 is_stmt 1               ; src/doubly_linked_list.c:22:16
+	.loc	0 31 16 is_stmt 1               ; src/doubly_linked_list.c:31:16
 	ldur	x8, [x29, #-16]
-	.loc	0 22 3 is_stmt 0                ; src/doubly_linked_list.c:22:3
+	.loc	0 31 3 is_stmt 0                ; src/doubly_linked_list.c:31:3
 	ldr	x9, [sp, #16]
-	.loc	0 22 14                         ; src/doubly_linked_list.c:22:14
+	.loc	0 31 14                         ; src/doubly_linked_list.c:31:14
 	str	x8, [x9, #8]
-	.loc	0 23 16 is_stmt 1               ; src/doubly_linked_list.c:23:16
+	.loc	0 32 16 is_stmt 1               ; src/doubly_linked_list.c:32:16
 	ldr	x8, [sp, #24]
-	.loc	0 23 3 is_stmt 0                ; src/doubly_linked_list.c:23:3
+	.loc	0 32 3 is_stmt 0                ; src/doubly_linked_list.c:32:3
 	ldr	x9, [sp, #16]
-	.loc	0 23 14                         ; src/doubly_linked_list.c:23:14
+	.loc	0 32 14                         ; src/doubly_linked_list.c:32:14
 	str	x8, [x9, #16]
-	.loc	0 24 10 is_stmt 1               ; src/doubly_linked_list.c:24:10
+	.loc	0 33 10 is_stmt 1               ; src/doubly_linked_list.c:33:10
 	ldr	x0, [sp, #16]
-	.loc	0 24 3 epilogue_begin is_stmt 0 ; src/doubly_linked_list.c:24:3
+	.loc	0 33 3 epilogue_begin is_stmt 0 ; src/doubly_linked_list.c:33:3
 	ldp	x29, x30, [sp, #48]             ; 16-byte Folded Reload
 	add	sp, sp, #64
 	ret
@@ -85,7 +85,7 @@ Lfunc_end0:
 	.p2align	2
 _free_node:                             ; @free_node
 Lfunc_begin1:
-	.loc	0 27 0 is_stmt 1                ; src/doubly_linked_list.c:27:0
+	.loc	0 36 0 is_stmt 1                ; src/doubly_linked_list.c:36:0
 	.cfi_startproc
 ; %bb.0:
 	sub	sp, sp, #32
@@ -96,17 +96,17 @@ Lfunc_begin1:
 	.cfi_offset w29, -16
 	str	x0, [sp, #8]
 Ltmp2:
-	.loc	0 28 8 prologue_end             ; src/doubly_linked_list.c:28:8
+	.loc	0 37 8 prologue_end             ; src/doubly_linked_list.c:37:8
 	ldr	x8, [sp, #8]
-	.loc	0 28 14 is_stmt 0               ; src/doubly_linked_list.c:28:14
+	.loc	0 37 14 is_stmt 0               ; src/doubly_linked_list.c:37:14
 	ldr	x0, [x8]
-	.loc	0 28 3                          ; src/doubly_linked_list.c:28:3
+	.loc	0 37 3                          ; src/doubly_linked_list.c:37:3
 	bl	_free
-	.loc	0 29 8 is_stmt 1                ; src/doubly_linked_list.c:29:8
+	.loc	0 38 8 is_stmt 1                ; src/doubly_linked_list.c:38:8
 	ldr	x0, [sp, #8]
-	.loc	0 29 3 is_stmt 0                ; src/doubly_linked_list.c:29:3
+	.loc	0 38 3 is_stmt 0                ; src/doubly_linked_list.c:38:3
 	bl	_free
-	.loc	0 30 1 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:30:1
+	.loc	0 39 1 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:39:1
 	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
 	add	sp, sp, #32
 	ret
@@ -118,7 +118,7 @@ Lfunc_end1:
 	.p2align	2
 _print_node:                            ; @print_node
 Lfunc_begin2:
-	.loc	0 32 0                          ; src/doubly_linked_list.c:32:0
+	.loc	0 41 0                          ; src/doubly_linked_list.c:41:0
 	.cfi_startproc
 ; %bb.0:
 	sub	sp, sp, #48
@@ -129,83 +129,83 @@ Lfunc_begin2:
 	.cfi_offset w29, -16
 	stur	x0, [x29, #-8]
 Ltmp4:
-	.loc	0 33 26 prologue_end            ; src/doubly_linked_list.c:33:26
+	.loc	0 42 26 prologue_end            ; src/doubly_linked_list.c:42:26
 	ldur	x8, [x29, #-8]
-	.loc	0 33 32 is_stmt 0               ; src/doubly_linked_list.c:33:32
+	.loc	0 42 32 is_stmt 0               ; src/doubly_linked_list.c:42:32
 	ldr	x8, [x8]
-	.loc	0 33 3                          ; src/doubly_linked_list.c:33:3
+	.loc	0 42 3                          ; src/doubly_linked_list.c:42:3
 	mov	x9, sp
 	str	x8, [x9]
 	adrp	x0, l_.str@PAGE
 	add	x0, x0, l_.str@PAGEOFF
 	bl	_printf
-	.loc	0 34 24 is_stmt 1               ; src/doubly_linked_list.c:34:24
+	.loc	0 43 24 is_stmt 1               ; src/doubly_linked_list.c:43:24
 	ldur	x8, [x29, #-8]
-	.loc	0 34 30 is_stmt 0               ; src/doubly_linked_list.c:34:30
+	.loc	0 43 30 is_stmt 0               ; src/doubly_linked_list.c:43:30
 	ldr	x8, [x8, #8]
-	.loc	0 34 24                         ; src/doubly_linked_list.c:34:24
+	.loc	0 43 24                         ; src/doubly_linked_list.c:43:24
 	cbz	x8, LBB2_2
 	b	LBB2_1
 LBB2_1:
-	.loc	0 34 37                         ; src/doubly_linked_list.c:34:37
+	.loc	0 43 37                         ; src/doubly_linked_list.c:43:37
 	ldur	x8, [x29, #-8]
-	.loc	0 34 43                         ; src/doubly_linked_list.c:34:43
+	.loc	0 43 43                         ; src/doubly_linked_list.c:43:43
 	ldr	x8, [x8, #8]
-	.loc	0 34 49                         ; src/doubly_linked_list.c:34:49
+	.loc	0 43 49                         ; src/doubly_linked_list.c:43:49
 	ldr	x8, [x8]
 	str	x8, [sp, #16]                   ; 8-byte Folded Spill
-	.loc	0 34 24                         ; src/doubly_linked_list.c:34:24
+	.loc	0 43 24                         ; src/doubly_linked_list.c:43:24
 	b	LBB2_3
 LBB2_2:
 	.loc	0 0 24                          ; src/doubly_linked_list.c:0:24
 	adrp	x8, l_.str.2@PAGE
 	add	x8, x8, l_.str.2@PAGEOFF
 	str	x8, [sp, #16]                   ; 8-byte Folded Spill
-	.loc	0 34 24                         ; src/doubly_linked_list.c:34:24
+	.loc	0 43 24                         ; src/doubly_linked_list.c:43:24
 	b	LBB2_3
 LBB2_3:
 	.loc	0 0 24                          ; src/doubly_linked_list.c:0:24
 	ldr	x8, [sp, #16]                   ; 8-byte Folded Reload
-	.loc	0 34 3                          ; src/doubly_linked_list.c:34:3
+	.loc	0 43 3                          ; src/doubly_linked_list.c:43:3
 	mov	x9, sp
 	str	x8, [x9]
 	adrp	x0, l_.str.1@PAGE
 	add	x0, x0, l_.str.1@PAGEOFF
 	bl	_printf
-	.loc	0 35 26 is_stmt 1               ; src/doubly_linked_list.c:35:26
+	.loc	0 44 26 is_stmt 1               ; src/doubly_linked_list.c:44:26
 	ldur	x8, [x29, #-8]
-	.loc	0 35 32 is_stmt 0               ; src/doubly_linked_list.c:35:32
+	.loc	0 44 32 is_stmt 0               ; src/doubly_linked_list.c:44:32
 	ldr	x8, [x8, #16]
-	.loc	0 35 26                         ; src/doubly_linked_list.c:35:26
+	.loc	0 44 26                         ; src/doubly_linked_list.c:44:26
 	cbz	x8, LBB2_5
 	b	LBB2_4
 LBB2_4:
-	.loc	0 35 39                         ; src/doubly_linked_list.c:35:39
+	.loc	0 44 39                         ; src/doubly_linked_list.c:44:39
 	ldur	x8, [x29, #-8]
-	.loc	0 35 45                         ; src/doubly_linked_list.c:35:45
+	.loc	0 44 45                         ; src/doubly_linked_list.c:44:45
 	ldr	x8, [x8, #16]
-	.loc	0 35 51                         ; src/doubly_linked_list.c:35:51
+	.loc	0 44 51                         ; src/doubly_linked_list.c:44:51
 	ldr	x8, [x8]
 	str	x8, [sp, #8]                    ; 8-byte Folded Spill
-	.loc	0 35 26                         ; src/doubly_linked_list.c:35:26
+	.loc	0 44 26                         ; src/doubly_linked_list.c:44:26
 	b	LBB2_6
 LBB2_5:
 	.loc	0 0 26                          ; src/doubly_linked_list.c:0:26
 	adrp	x8, l_.str.2@PAGE
 	add	x8, x8, l_.str.2@PAGEOFF
 	str	x8, [sp, #8]                    ; 8-byte Folded Spill
-	.loc	0 35 26                         ; src/doubly_linked_list.c:35:26
+	.loc	0 44 26                         ; src/doubly_linked_list.c:44:26
 	b	LBB2_6
 LBB2_6:
 	.loc	0 0 26                          ; src/doubly_linked_list.c:0:26
 	ldr	x8, [sp, #8]                    ; 8-byte Folded Reload
-	.loc	0 35 3                          ; src/doubly_linked_list.c:35:3
+	.loc	0 44 3                          ; src/doubly_linked_list.c:44:3
 	mov	x9, sp
 	str	x8, [x9]
 	adrp	x0, l_.str.3@PAGE
 	add	x0, x0, l_.str.3@PAGEOFF
 	bl	_printf
-	.loc	0 36 1 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:36:1
+	.loc	0 45 1 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:45:1
 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
 	add	sp, sp, #48
 	ret
@@ -217,7 +217,7 @@ Lfunc_end2:
 	.p2align	2
 _main:                                  ; @main
 Lfunc_begin3:
-	.loc	0 38 0                          ; src/doubly_linked_list.c:38:0
+	.loc	0 47 0                          ; src/doubly_linked_list.c:47:0
 	.cfi_startproc
 ; %bb.0:
 	sub	sp, sp, #48
@@ -230,24 +230,24 @@ Lfunc_begin3:
 	str	w8, [sp, #12]                   ; 4-byte Folded Spill
 	stur	wzr, [x29, #-4]
 Ltmp6:
-	.loc	0 39 17 prologue_end            ; src/doubly_linked_list.c:39:17
+	.loc	0 48 17 prologue_end            ; src/doubly_linked_list.c:48:17
 	adrp	x0, l_.str.4@PAGE
 	add	x0, x0, l_.str.4@PAGEOFF
 	mov	x2, #0                          ; =0x0
 	mov	x1, x2
 	bl	_create_node
-	.loc	0 39 9 is_stmt 0                ; src/doubly_linked_list.c:39:9
+	.loc	0 48 9 is_stmt 0                ; src/doubly_linked_list.c:48:9
 	str	x0, [sp, #16]
-	.loc	0 40 14 is_stmt 1               ; src/doubly_linked_list.c:40:14
+	.loc	0 49 14 is_stmt 1               ; src/doubly_linked_list.c:49:14
 	ldr	x0, [sp, #16]
-	.loc	0 40 3 is_stmt 0                ; src/doubly_linked_list.c:40:3
+	.loc	0 49 3 is_stmt 0                ; src/doubly_linked_list.c:49:3
 	bl	_print_node
-	.loc	0 41 13 is_stmt 1               ; src/doubly_linked_list.c:41:13
+	.loc	0 50 13 is_stmt 1               ; src/doubly_linked_list.c:50:13
 	ldr	x0, [sp, #16]
-	.loc	0 41 3 is_stmt 0                ; src/doubly_linked_list.c:41:3
+	.loc	0 50 3 is_stmt 0                ; src/doubly_linked_list.c:50:3
 	bl	_free_node
 	ldr	w0, [sp, #12]                   ; 4-byte Folded Reload
-	.loc	0 42 3 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:42:3
+	.loc	0 51 3 epilogue_begin is_stmt 1 ; src/doubly_linked_list.c:51:3
 	ldp	x29, x30, [sp, #32]             ; 16-byte Folded Reload
 	add	sp, sp, #48
 	ret
@@ -511,7 +511,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x25:0xa DW_TAG_variable
 	.long	47                              ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	33                              ; DW_AT_decl_line
+	.byte	42                              ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	0
@@ -532,7 +532,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x43:0xa DW_TAG_variable
 	.long	77                              ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	34                              ; DW_AT_decl_line
+	.byte	43                              ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	1
@@ -545,7 +545,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x59:0xa DW_TAG_variable
 	.long	99                              ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	34                              ; DW_AT_decl_line
+	.byte	43                              ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	2
@@ -558,7 +558,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x6f:0xa DW_TAG_variable
 	.long	121                             ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	35                              ; DW_AT_decl_line
+	.byte	44                              ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	3
@@ -571,7 +571,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x85:0xa DW_TAG_variable
 	.long	47                              ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	39                              ; DW_AT_decl_line
+	.byte	48                              ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	4
@@ -583,7 +583,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	109
 	.byte	7                               ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	16                              ; DW_AT_decl_line
+	.byte	25                              ; DW_AT_decl_line
                                         ; DW_AT_prototyped
 	.long	287                             ; DW_AT_type
                                         ; DW_AT_external
@@ -593,7 +593,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	120
 	.byte	8                               ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	16                              ; DW_AT_decl_line
+	.byte	25                              ; DW_AT_decl_line
 	.long	347                             ; DW_AT_type
 	.byte	8                               ; Abbrev [8] 0xa9:0xb DW_TAG_formal_parameter
 	.byte	2                               ; DW_AT_location
@@ -601,7 +601,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	112
 	.byte	9                               ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	16                              ; DW_AT_decl_line
+	.byte	25                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	8                               ; Abbrev [8] 0xb4:0xb DW_TAG_formal_parameter
 	.byte	2                               ; DW_AT_location
@@ -609,7 +609,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	24
 	.byte	10                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	16                              ; DW_AT_decl_line
+	.byte	25                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	9                               ; Abbrev [9] 0xbf:0xb DW_TAG_variable
 	.byte	2                               ; DW_AT_location
@@ -617,7 +617,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	16
 	.byte	16                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	17                              ; DW_AT_decl_line
+	.byte	26                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	9                               ; Abbrev [9] 0xca:0xb DW_TAG_variable
 	.byte	2                               ; DW_AT_location
@@ -625,7 +625,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.byte	8
 	.byte	17                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	18                              ; DW_AT_decl_line
+	.byte	27                              ; DW_AT_decl_line
 	.long	357                             ; DW_AT_type
 	.byte	0                               ; End Of Children Mark
 	.byte	10                              ; Abbrev [10] 0xd6:0x17 DW_TAG_subprogram
@@ -636,7 +636,7 @@ Lset7 = Lfunc_end1-Lfunc_begin1         ; DW_AT_high_pc
 	.byte	109
 	.byte	12                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	27                              ; DW_AT_decl_line
+	.byte	36                              ; DW_AT_decl_line
                                         ; DW_AT_prototyped
                                         ; DW_AT_external
 	.byte	8                               ; Abbrev [8] 0xe1:0xb DW_TAG_formal_parameter
@@ -645,7 +645,7 @@ Lset7 = Lfunc_end1-Lfunc_begin1         ; DW_AT_high_pc
 	.byte	8
 	.byte	16                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	27                              ; DW_AT_decl_line
+	.byte	36                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	0                               ; End Of Children Mark
 	.byte	10                              ; Abbrev [10] 0xed:0x17 DW_TAG_subprogram
@@ -656,7 +656,7 @@ Lset8 = Lfunc_end2-Lfunc_begin2         ; DW_AT_high_pc
 	.byte	109
 	.byte	13                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	32                              ; DW_AT_decl_line
+	.byte	41                              ; DW_AT_decl_line
                                         ; DW_AT_prototyped
                                         ; DW_AT_external
 	.byte	8                               ; Abbrev [8] 0xf8:0xb DW_TAG_formal_parameter
@@ -665,7 +665,7 @@ Lset8 = Lfunc_end2-Lfunc_begin2         ; DW_AT_high_pc
 	.byte	120
 	.byte	16                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	32                              ; DW_AT_decl_line
+	.byte	41                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	0                               ; End Of Children Mark
 	.byte	7                               ; Abbrev [7] 0x104:0x1b DW_TAG_subprogram
@@ -676,7 +676,7 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ; DW_AT_high_pc
 	.byte	109
 	.byte	14                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	38                              ; DW_AT_decl_line
+	.byte	47                              ; DW_AT_decl_line
                                         ; DW_AT_prototyped
 	.long	343                             ; DW_AT_type
                                         ; DW_AT_external
@@ -686,7 +686,7 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ; DW_AT_high_pc
 	.byte	16
 	.byte	19                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	39                              ; DW_AT_decl_line
+	.byte	48                              ; DW_AT_decl_line
 	.long	287                             ; DW_AT_type
 	.byte	0                               ; End Of Children Mark
 	.byte	11                              ; Abbrev [11] 0x11f:0x5 DW_TAG_pointer_type
@@ -695,29 +695,29 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ; DW_AT_high_pc
 	.long	300                             ; DW_AT_type
 	.byte	11                              ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
-	.byte	9                               ; DW_AT_decl_line
+	.byte	15                              ; DW_AT_decl_line
 	.byte	13                              ; Abbrev [13] 0x12c:0x21 DW_TAG_structure_type
 	.byte	11                              ; DW_AT_name
 	.byte	24                              ; DW_AT_byte_size
 	.byte	0                               ; DW_AT_decl_file
-	.byte	5                               ; DW_AT_decl_line
+	.byte	11                              ; DW_AT_decl_line
 	.byte	14                              ; Abbrev [14] 0x131:0x9 DW_TAG_member
 	.byte	8                               ; DW_AT_name
 	.long	333                             ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	6                               ; DW_AT_decl_line
+	.byte	12                              ; DW_AT_decl_line
 	.byte	0                               ; DW_AT_data_member_location
 	.byte	14                              ; Abbrev [14] 0x13a:0x9 DW_TAG_member
 	.byte	9                               ; DW_AT_name
 	.long	338                             ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	7                               ; DW_AT_decl_line
+	.byte	13                              ; DW_AT_decl_line
 	.byte	8                               ; DW_AT_data_member_location
 	.byte	14                              ; Abbrev [14] 0x143:0x9 DW_TAG_member
 	.byte	10                              ; DW_AT_name
 	.long	338                             ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	8                               ; DW_AT_decl_line
+	.byte	14                              ; DW_AT_decl_line
 	.byte	16                              ; DW_AT_data_member_location
 	.byte	0                               ; End Of Children Mark
 	.byte	11                              ; Abbrev [11] 0x14d:0x5 DW_TAG_pointer_type

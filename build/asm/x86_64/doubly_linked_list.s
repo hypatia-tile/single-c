@@ -1,11 +1,11 @@
 	.build_version macos, 26, 0	sdk_version 26, 2
 	.section	__TEXT,__text,regular,pure_instructions
-	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0x2109c36b65464f5b50d6635dde8259c3
+	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0xef0a33a7e0789e1546d51ae59076bc8a
 	.globl	_create_node                    ## -- Begin function create_node
 	.p2align	4
 _create_node:                           ## @create_node
 Lfunc_begin0:
-	.loc	0 16 0                          ## src/doubly_linked_list.c:16:0
+	.loc	0 25 0                          ## src/doubly_linked_list.c:25:0
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp
@@ -18,60 +18,60 @@ Lfunc_begin0:
 	movq	%rsi, -16(%rbp)
 	movq	%rdx, -24(%rbp)
 Ltmp0:
-	.loc	0 17 16 prologue_end            ## src/doubly_linked_list.c:17:16
+	.loc	0 26 16 prologue_end            ## src/doubly_linked_list.c:26:16
 	movl	$24, %edi
 	callq	_malloc
-	.loc	0 17 9 is_stmt 0                ## src/doubly_linked_list.c:17:9
+	.loc	0 26 9 is_stmt 0                ## src/doubly_linked_list.c:26:9
 	movq	%rax, -32(%rbp)
-	.loc	0 18 35 is_stmt 1               ## src/doubly_linked_list.c:18:35
+	.loc	0 27 35 is_stmt 1               ## src/doubly_linked_list.c:27:35
 	movq	-8(%rbp), %rdi
-	.loc	0 18 28 is_stmt 0               ## src/doubly_linked_list.c:18:28
+	.loc	0 27 28 is_stmt 0               ## src/doubly_linked_list.c:27:28
 	callq	_strlen
-	.loc	0 18 17                         ## src/doubly_linked_list.c:18:17
+	.loc	0 27 17                         ## src/doubly_linked_list.c:27:17
 	movq	%rax, -40(%rbp)
-	.loc	0 19 39 is_stmt 1               ## src/doubly_linked_list.c:19:39
+	.loc	0 28 39 is_stmt 1               ## src/doubly_linked_list.c:28:39
 	movq	-40(%rbp), %rdi
-	.loc	0 19 48 is_stmt 0               ## src/doubly_linked_list.c:19:48
+	.loc	0 28 48 is_stmt 0               ## src/doubly_linked_list.c:28:48
 	addq	$1, %rdi
-	.loc	0 19 36                         ## src/doubly_linked_list.c:19:36
+	.loc	0 28 36                         ## src/doubly_linked_list.c:28:36
 	shlq	$0, %rdi
-	.loc	0 19 16                         ## src/doubly_linked_list.c:19:16
+	.loc	0 28 16                         ## src/doubly_linked_list.c:28:16
 	callq	_malloc
 	movq	%rax, %rcx
-	.loc	0 19 3                          ## src/doubly_linked_list.c:19:3
+	.loc	0 28 3                          ## src/doubly_linked_list.c:28:3
 	movq	-32(%rbp), %rax
-	.loc	0 19 14                         ## src/doubly_linked_list.c:19:14
+	.loc	0 28 14                         ## src/doubly_linked_list.c:28:14
 	movq	%rcx, (%rax)
-	.loc	0 20 3 is_stmt 1                ## src/doubly_linked_list.c:20:3
+	.loc	0 29 3 is_stmt 1                ## src/doubly_linked_list.c:29:3
 	movq	-32(%rbp), %rax
 	movq	(%rax), %rdi
 	movq	-8(%rbp), %rsi
 	movq	-40(%rbp), %rdx
 	movq	$-1, %rcx
 	callq	___strncpy_chk
-	.loc	0 21 3                          ## src/doubly_linked_list.c:21:3
+	.loc	0 30 3                          ## src/doubly_linked_list.c:30:3
 	movq	-32(%rbp), %rax
-	.loc	0 21 9 is_stmt 0                ## src/doubly_linked_list.c:21:9
+	.loc	0 30 9 is_stmt 0                ## src/doubly_linked_list.c:30:9
 	movq	(%rax), %rax
-	.loc	0 21 14                         ## src/doubly_linked_list.c:21:14
+	.loc	0 30 14                         ## src/doubly_linked_list.c:30:14
 	movq	-40(%rbp), %rcx
-	.loc	0 21 24                         ## src/doubly_linked_list.c:21:24
+	.loc	0 30 24                         ## src/doubly_linked_list.c:30:24
 	movb	$0, (%rax,%rcx)
-	.loc	0 22 16 is_stmt 1               ## src/doubly_linked_list.c:22:16
+	.loc	0 31 16 is_stmt 1               ## src/doubly_linked_list.c:31:16
 	movq	-16(%rbp), %rcx
-	.loc	0 22 3 is_stmt 0                ## src/doubly_linked_list.c:22:3
+	.loc	0 31 3 is_stmt 0                ## src/doubly_linked_list.c:31:3
 	movq	-32(%rbp), %rax
-	.loc	0 22 14                         ## src/doubly_linked_list.c:22:14
+	.loc	0 31 14                         ## src/doubly_linked_list.c:31:14
 	movq	%rcx, 8(%rax)
-	.loc	0 23 16 is_stmt 1               ## src/doubly_linked_list.c:23:16
+	.loc	0 32 16 is_stmt 1               ## src/doubly_linked_list.c:32:16
 	movq	-24(%rbp), %rcx
-	.loc	0 23 3 is_stmt 0                ## src/doubly_linked_list.c:23:3
+	.loc	0 32 3 is_stmt 0                ## src/doubly_linked_list.c:32:3
 	movq	-32(%rbp), %rax
-	.loc	0 23 14                         ## src/doubly_linked_list.c:23:14
+	.loc	0 32 14                         ## src/doubly_linked_list.c:32:14
 	movq	%rcx, 16(%rax)
-	.loc	0 24 10 is_stmt 1               ## src/doubly_linked_list.c:24:10
+	.loc	0 33 10 is_stmt 1               ## src/doubly_linked_list.c:33:10
 	movq	-32(%rbp), %rax
-	.loc	0 24 3 epilogue_begin is_stmt 0 ## src/doubly_linked_list.c:24:3
+	.loc	0 33 3 epilogue_begin is_stmt 0 ## src/doubly_linked_list.c:33:3
 	addq	$48, %rsp
 	popq	%rbp
 	retq
@@ -83,7 +83,7 @@ Lfunc_end0:
 	.p2align	4
 _free_node:                             ## @free_node
 Lfunc_begin1:
-	.loc	0 27 0 is_stmt 1                ## src/doubly_linked_list.c:27:0
+	.loc	0 36 0 is_stmt 1                ## src/doubly_linked_list.c:36:0
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp
@@ -94,17 +94,17 @@ Lfunc_begin1:
 	subq	$16, %rsp
 	movq	%rdi, -8(%rbp)
 Ltmp2:
-	.loc	0 28 8 prologue_end             ## src/doubly_linked_list.c:28:8
+	.loc	0 37 8 prologue_end             ## src/doubly_linked_list.c:37:8
 	movq	-8(%rbp), %rax
-	.loc	0 28 14 is_stmt 0               ## src/doubly_linked_list.c:28:14
+	.loc	0 37 14 is_stmt 0               ## src/doubly_linked_list.c:37:14
 	movq	(%rax), %rdi
-	.loc	0 28 3                          ## src/doubly_linked_list.c:28:3
+	.loc	0 37 3                          ## src/doubly_linked_list.c:37:3
 	callq	_free
-	.loc	0 29 8 is_stmt 1                ## src/doubly_linked_list.c:29:8
+	.loc	0 38 8 is_stmt 1                ## src/doubly_linked_list.c:38:8
 	movq	-8(%rbp), %rdi
-	.loc	0 29 3 is_stmt 0                ## src/doubly_linked_list.c:29:3
+	.loc	0 38 3 is_stmt 0                ## src/doubly_linked_list.c:38:3
 	callq	_free
-	.loc	0 30 1 epilogue_begin is_stmt 1 ## src/doubly_linked_list.c:30:1
+	.loc	0 39 1 epilogue_begin is_stmt 1 ## src/doubly_linked_list.c:39:1
 	addq	$16, %rsp
 	popq	%rbp
 	retq
@@ -116,7 +116,7 @@ Lfunc_end1:
 	.p2align	4
 _print_node:                            ## @print_node
 Lfunc_begin2:
-	.loc	0 32 0                          ## src/doubly_linked_list.c:32:0
+	.loc	0 41 0                          ## src/doubly_linked_list.c:41:0
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp
@@ -127,27 +127,27 @@ Lfunc_begin2:
 	subq	$32, %rsp
 	movq	%rdi, -8(%rbp)
 Ltmp4:
-	.loc	0 33 26 prologue_end            ## src/doubly_linked_list.c:33:26
+	.loc	0 42 26 prologue_end            ## src/doubly_linked_list.c:42:26
 	movq	-8(%rbp), %rax
-	.loc	0 33 32 is_stmt 0               ## src/doubly_linked_list.c:33:32
+	.loc	0 42 32 is_stmt 0               ## src/doubly_linked_list.c:42:32
 	movq	(%rax), %rsi
-	.loc	0 33 3                          ## src/doubly_linked_list.c:33:3
+	.loc	0 42 3                          ## src/doubly_linked_list.c:42:3
 	leaq	L_.str(%rip), %rdi
 	movb	$0, %al
 	callq	_printf
-	.loc	0 34 24 is_stmt 1               ## src/doubly_linked_list.c:34:24
+	.loc	0 43 24 is_stmt 1               ## src/doubly_linked_list.c:43:24
 	movq	-8(%rbp), %rax
 	cmpq	$0, 8(%rax)
 	je	LBB2_2
 ## %bb.1:
-	.loc	0 34 37 is_stmt 0               ## src/doubly_linked_list.c:34:37
+	.loc	0 43 37 is_stmt 0               ## src/doubly_linked_list.c:43:37
 	movq	-8(%rbp), %rax
-	.loc	0 34 43                         ## src/doubly_linked_list.c:34:43
+	.loc	0 43 43                         ## src/doubly_linked_list.c:43:43
 	movq	8(%rax), %rax
-	.loc	0 34 49                         ## src/doubly_linked_list.c:34:49
+	.loc	0 43 49                         ## src/doubly_linked_list.c:43:49
 	movq	(%rax), %rax
 	movq	%rax, -16(%rbp)                 ## 8-byte Spill
-	.loc	0 34 24                         ## src/doubly_linked_list.c:34:24
+	.loc	0 43 24                         ## src/doubly_linked_list.c:43:24
 	jmp	LBB2_3
 LBB2_2:
 	leaq	L_.str.2(%rip), %rax
@@ -156,23 +156,23 @@ LBB2_2:
 LBB2_3:
 	.loc	0 0 24                          ## src/doubly_linked_list.c:0:24
 	movq	-16(%rbp), %rsi                 ## 8-byte Reload
-	.loc	0 34 3                          ## src/doubly_linked_list.c:34:3
+	.loc	0 43 3                          ## src/doubly_linked_list.c:43:3
 	leaq	L_.str.1(%rip), %rdi
 	movb	$0, %al
 	callq	_printf
-	.loc	0 35 26 is_stmt 1               ## src/doubly_linked_list.c:35:26
+	.loc	0 44 26 is_stmt 1               ## src/doubly_linked_list.c:44:26
 	movq	-8(%rbp), %rax
 	cmpq	$0, 16(%rax)
 	je	LBB2_5
 ## %bb.4:
-	.loc	0 35 39 is_stmt 0               ## src/doubly_linked_list.c:35:39
+	.loc	0 44 39 is_stmt 0               ## src/doubly_linked_list.c:44:39
 	movq	-8(%rbp), %rax
-	.loc	0 35 45                         ## src/doubly_linked_list.c:35:45
+	.loc	0 44 45                         ## src/doubly_linked_list.c:44:45
 	movq	16(%rax), %rax
-	.loc	0 35 51                         ## src/doubly_linked_list.c:35:51
+	.loc	0 44 51                         ## src/doubly_linked_list.c:44:51
 	movq	(%rax), %rax
 	movq	%rax, -24(%rbp)                 ## 8-byte Spill
-	.loc	0 35 26                         ## src/doubly_linked_list.c:35:26
+	.loc	0 44 26                         ## src/doubly_linked_list.c:44:26
 	jmp	LBB2_6
 LBB2_5:
 	leaq	L_.str.2(%rip), %rax
@@ -181,11 +181,11 @@ LBB2_5:
 LBB2_6:
 	.loc	0 0 26                          ## src/doubly_linked_list.c:0:26
 	movq	-24(%rbp), %rsi                 ## 8-byte Reload
-	.loc	0 35 3                          ## src/doubly_linked_list.c:35:3
+	.loc	0 44 3                          ## src/doubly_linked_list.c:44:3
 	leaq	L_.str.3(%rip), %rdi
 	movb	$0, %al
 	callq	_printf
-	.loc	0 36 1 epilogue_begin is_stmt 1 ## src/doubly_linked_list.c:36:1
+	.loc	0 45 1 epilogue_begin is_stmt 1 ## src/doubly_linked_list.c:45:1
 	addq	$32, %rsp
 	popq	%rbp
 	retq
@@ -197,7 +197,7 @@ Lfunc_end2:
 	.p2align	4
 _main:                                  ## @main
 Lfunc_begin3:
-	.loc	0 38 0                          ## src/doubly_linked_list.c:38:0
+	.loc	0 47 0                          ## src/doubly_linked_list.c:47:0
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp
@@ -208,25 +208,25 @@ Lfunc_begin3:
 	subq	$16, %rsp
 	movl	$0, -4(%rbp)
 Ltmp6:
-	.loc	0 39 17 prologue_end            ## src/doubly_linked_list.c:39:17
+	.loc	0 48 17 prologue_end            ## src/doubly_linked_list.c:48:17
 	leaq	L_.str.4(%rip), %rdi
 	xorl	%eax, %eax
 	movl	%eax, %edx
 	movq	%rdx, %rsi
 	callq	_create_node
-	.loc	0 39 9 is_stmt 0                ## src/doubly_linked_list.c:39:9
+	.loc	0 48 9 is_stmt 0                ## src/doubly_linked_list.c:48:9
 	movq	%rax, -16(%rbp)
-	.loc	0 40 14 is_stmt 1               ## src/doubly_linked_list.c:40:14
+	.loc	0 49 14 is_stmt 1               ## src/doubly_linked_list.c:49:14
 	movq	-16(%rbp), %rdi
-	.loc	0 40 3 is_stmt 0                ## src/doubly_linked_list.c:40:3
+	.loc	0 49 3 is_stmt 0                ## src/doubly_linked_list.c:49:3
 	callq	_print_node
-	.loc	0 41 13 is_stmt 1               ## src/doubly_linked_list.c:41:13
+	.loc	0 50 13 is_stmt 1               ## src/doubly_linked_list.c:50:13
 	movq	-16(%rbp), %rdi
-	.loc	0 41 3 is_stmt 0                ## src/doubly_linked_list.c:41:3
+	.loc	0 50 3 is_stmt 0                ## src/doubly_linked_list.c:50:3
 	callq	_free_node
-	.loc	0 42 3 is_stmt 1                ## src/doubly_linked_list.c:42:3
+	.loc	0 51 3 is_stmt 1                ## src/doubly_linked_list.c:51:3
 	xorl	%eax, %eax
-	.loc	0 42 3 epilogue_begin is_stmt 0 ## src/doubly_linked_list.c:42:3
+	.loc	0 51 3 epilogue_begin is_stmt 0 ## src/doubly_linked_list.c:51:3
 	addq	$16, %rsp
 	popq	%rbp
 	retq
@@ -490,7 +490,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x25:0xa DW_TAG_variable
 	.long	47                              ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	33                              ## DW_AT_decl_line
+	.byte	42                              ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	0
@@ -511,7 +511,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x43:0xa DW_TAG_variable
 	.long	77                              ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	34                              ## DW_AT_decl_line
+	.byte	43                              ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	1
@@ -524,7 +524,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x59:0xa DW_TAG_variable
 	.long	99                              ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	34                              ## DW_AT_decl_line
+	.byte	43                              ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	2
@@ -537,7 +537,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x6f:0xa DW_TAG_variable
 	.long	121                             ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	35                              ## DW_AT_decl_line
+	.byte	44                              ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	3
@@ -550,7 +550,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x85:0xa DW_TAG_variable
 	.long	47                              ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	39                              ## DW_AT_decl_line
+	.byte	48                              ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	4
@@ -562,7 +562,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	86
 	.byte	7                               ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	16                              ## DW_AT_decl_line
+	.byte	25                              ## DW_AT_decl_line
                                         ## DW_AT_prototyped
 	.long	287                             ## DW_AT_type
                                         ## DW_AT_external
@@ -572,7 +572,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	120
 	.byte	8                               ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	16                              ## DW_AT_decl_line
+	.byte	25                              ## DW_AT_decl_line
 	.long	347                             ## DW_AT_type
 	.byte	8                               ## Abbrev [8] 0xa9:0xb DW_TAG_formal_parameter
 	.byte	2                               ## DW_AT_location
@@ -580,7 +580,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	112
 	.byte	9                               ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	16                              ## DW_AT_decl_line
+	.byte	25                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	8                               ## Abbrev [8] 0xb4:0xb DW_TAG_formal_parameter
 	.byte	2                               ## DW_AT_location
@@ -588,7 +588,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	104
 	.byte	10                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	16                              ## DW_AT_decl_line
+	.byte	25                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	9                               ## Abbrev [9] 0xbf:0xb DW_TAG_variable
 	.byte	2                               ## DW_AT_location
@@ -596,7 +596,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	96
 	.byte	16                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	17                              ## DW_AT_decl_line
+	.byte	26                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	9                               ## Abbrev [9] 0xca:0xb DW_TAG_variable
 	.byte	2                               ## DW_AT_location
@@ -604,7 +604,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	88
 	.byte	17                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	18                              ## DW_AT_decl_line
+	.byte	27                              ## DW_AT_decl_line
 	.long	357                             ## DW_AT_type
 	.byte	0                               ## End Of Children Mark
 	.byte	10                              ## Abbrev [10] 0xd6:0x17 DW_TAG_subprogram
@@ -615,7 +615,7 @@ Lset7 = Lfunc_end1-Lfunc_begin1         ## DW_AT_high_pc
 	.byte	86
 	.byte	12                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	27                              ## DW_AT_decl_line
+	.byte	36                              ## DW_AT_decl_line
                                         ## DW_AT_prototyped
                                         ## DW_AT_external
 	.byte	8                               ## Abbrev [8] 0xe1:0xb DW_TAG_formal_parameter
@@ -624,7 +624,7 @@ Lset7 = Lfunc_end1-Lfunc_begin1         ## DW_AT_high_pc
 	.byte	120
 	.byte	16                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	27                              ## DW_AT_decl_line
+	.byte	36                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	0                               ## End Of Children Mark
 	.byte	10                              ## Abbrev [10] 0xed:0x17 DW_TAG_subprogram
@@ -635,7 +635,7 @@ Lset8 = Lfunc_end2-Lfunc_begin2         ## DW_AT_high_pc
 	.byte	86
 	.byte	13                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	32                              ## DW_AT_decl_line
+	.byte	41                              ## DW_AT_decl_line
                                         ## DW_AT_prototyped
                                         ## DW_AT_external
 	.byte	8                               ## Abbrev [8] 0xf8:0xb DW_TAG_formal_parameter
@@ -644,7 +644,7 @@ Lset8 = Lfunc_end2-Lfunc_begin2         ## DW_AT_high_pc
 	.byte	120
 	.byte	16                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	32                              ## DW_AT_decl_line
+	.byte	41                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	0                               ## End Of Children Mark
 	.byte	7                               ## Abbrev [7] 0x104:0x1b DW_TAG_subprogram
@@ -655,7 +655,7 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ## DW_AT_high_pc
 	.byte	86
 	.byte	14                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	38                              ## DW_AT_decl_line
+	.byte	47                              ## DW_AT_decl_line
                                         ## DW_AT_prototyped
 	.long	343                             ## DW_AT_type
                                         ## DW_AT_external
@@ -665,7 +665,7 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ## DW_AT_high_pc
 	.byte	112
 	.byte	19                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	39                              ## DW_AT_decl_line
+	.byte	48                              ## DW_AT_decl_line
 	.long	287                             ## DW_AT_type
 	.byte	0                               ## End Of Children Mark
 	.byte	11                              ## Abbrev [11] 0x11f:0x5 DW_TAG_pointer_type
@@ -674,29 +674,29 @@ Lset9 = Lfunc_end3-Lfunc_begin3         ## DW_AT_high_pc
 	.long	300                             ## DW_AT_type
 	.byte	11                              ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
-	.byte	9                               ## DW_AT_decl_line
+	.byte	15                              ## DW_AT_decl_line
 	.byte	13                              ## Abbrev [13] 0x12c:0x21 DW_TAG_structure_type
 	.byte	11                              ## DW_AT_name
 	.byte	24                              ## DW_AT_byte_size
 	.byte	0                               ## DW_AT_decl_file
-	.byte	5                               ## DW_AT_decl_line
+	.byte	11                              ## DW_AT_decl_line
 	.byte	14                              ## Abbrev [14] 0x131:0x9 DW_TAG_member
 	.byte	8                               ## DW_AT_name
 	.long	333                             ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	6                               ## DW_AT_decl_line
+	.byte	12                              ## DW_AT_decl_line
 	.byte	0                               ## DW_AT_data_member_location
 	.byte	14                              ## Abbrev [14] 0x13a:0x9 DW_TAG_member
 	.byte	9                               ## DW_AT_name
 	.long	338                             ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	7                               ## DW_AT_decl_line
+	.byte	13                              ## DW_AT_decl_line
 	.byte	8                               ## DW_AT_data_member_location
 	.byte	14                              ## Abbrev [14] 0x143:0x9 DW_TAG_member
 	.byte	10                              ## DW_AT_name
 	.long	338                             ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	8                               ## DW_AT_decl_line
+	.byte	14                              ## DW_AT_decl_line
 	.byte	16                              ## DW_AT_data_member_location
 	.byte	0                               ## End Of Children Mark
 	.byte	11                              ## Abbrev [11] 0x14d:0x5 DW_TAG_pointer_type

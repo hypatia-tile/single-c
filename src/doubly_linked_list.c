@@ -2,12 +2,21 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * @brief Represents a node in a doubly linked list.
+ * This structure holds the data of elements `data` and
+ * their references to the previous `prev` and next `next` nodes in the list.
+ *
+ */
 typedef struct Node {
-  char *data;
-  struct Node *prev;
-  struct Node *next;
+  char *data;        /** The data stored in the node. */
+  struct Node *prev; /** Pointer to the previous node in the list. */
+  struct Node *next; /** Pointer to the next node in the list. */
 } Node;
 
+/**
+ * The type definition for a doubly linked list.
+ */
 typedef struct {
   Node *first;
   Node *last;
