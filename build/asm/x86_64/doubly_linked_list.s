@@ -1,6 +1,6 @@
 	.build_version macos, 26, 0	sdk_version 26, 2
 	.section	__TEXT,__text,regular,pure_instructions
-	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0x2f3ce309ebdb48a9f0c0faa1d5c4b019
+	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/doubly_linked_list.c" md5 0xca6d377b88a0aee33cf177d29be26d7d
 	.globl	_fail                           ## -- Begin function fail
 	.p2align	4
 _fail:                                  ## @fail
@@ -85,12 +85,13 @@ LBB1_2:
 	.loc	0 37 14                         ## src/doubly_linked_list.c:37:14
 	movq	%rcx, (%rax)
 Ltmp5:
-	.loc	0 38 7 is_stmt 1                ## src/doubly_linked_list.c:38:7
+	.loc	0 38 8 is_stmt 1                ## src/doubly_linked_list.c:38:8
 	movq	-32(%rbp), %rax
 	cmpq	$0, (%rax)
-	je	LBB1_4
+	.loc	0 38 7 is_stmt 0                ## src/doubly_linked_list.c:38:7
+	jne	LBB1_4
 ## %bb.3:
-	.loc	0 39 5                          ## src/doubly_linked_list.c:39:5
+	.loc	0 39 5 is_stmt 1                ## src/doubly_linked_list.c:39:5
 	leaq	L_.str.2(%rip), %rdi
 	callq	_fail
 Ltmp6:

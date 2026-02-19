@@ -35,7 +35,7 @@ Node *create_node(const char *data, Node *prev, Node *next) {
   unsigned long data_len = strlen(data);
 
   node->data = malloc(sizeof(char) * (data_len + 1));
-  if (node->data)
+  if (!node->data)
     fail("Failed to allocate memory for data.");
 
   strncpy(node->data, data, data_len);
