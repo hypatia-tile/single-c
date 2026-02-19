@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+void fail(const char *message) {
+  fprintf(stderr, "%s\n", message);
+  exit(EXIT_FAILURE);
+}
+
 /**
  * @brief Represents a node in a doubly linked list.
  * This structure holds the data of elements `data` and
@@ -24,8 +29,15 @@ typedef struct {
 
 Node *create_node(const char *data, Node *prev, Node *next) {
   Node *node = malloc(sizeof(Node));
+
+  if (!node)
+    fail("Failed to allocate memory for node.");
   unsigned long data_len = strlen(data);
+
   node->data = malloc(sizeof(char) * (data_len + 1));
+  if (!node->data)
+    fail("Failed to allocate memory for data.");
+
   strncpy(node->data, data, data_len);
   node->data[data_len] = '\0';
   node->prev = prev;
@@ -48,6 +60,9 @@ void print_node(Node *node) {
 
 DoublyLinkedList *new_list() {
   DoublyLinkedList *list = malloc(sizeof(DoublyLinkedList));
+  if (!list)
+    fail("Failed to allocate memory for list.");
+
   list->first = NULL;
   list->last = NULL;
   return list;
