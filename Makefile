@@ -45,11 +45,11 @@ $(BIN_DIR)/%: $(SRC_DIR)/%.c | $(BIN_DIR)
 # ---- assembly generation ----
 # x86-64 assembly
 $(ASM_DIR)/x86_64/%.s: $(SRC_DIR)/%.c | $(ASM_DIR)/x86_64
-	@$(CC) $(CFLAGS) -S -target $(TRIPLE_X86_64) -o $@ $<
+	@$(CC) $(CFLAGS) -fno-asynchronous-unwind-tables -S -target $(TRIPLE_X86_64) -o $@ $<
 
 # AArch64 assembly
 $(ASM_DIR)/aarch64/%.s: $(SRC_DIR)/%.c | $(ASM_DIR)/aarch64
-	@$(CC) $(CFLAGS) -S -target $(TRIPLE_AARCH64) -o $@ $<
+	@$(CC) $(CFLAGS) -fno-asynchronous-unwind-tables -S -target $(TRIPLE_AARCH64) -o $@ $<
 
 asm: $(ASM_X86_64) $(ASM_AARCH64)
 

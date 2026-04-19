@@ -6,6 +6,7 @@
 _add:                                   ## @add
 Lfunc_begin0:
 	.loc	0 3 0                           ## src/func_pointer.c:3:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

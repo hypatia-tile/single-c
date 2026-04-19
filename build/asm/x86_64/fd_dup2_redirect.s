@@ -6,6 +6,7 @@
 _main:                                  ## @main
 Lfunc_begin0:
 	.loc	0 12 0                          ## src/fd_dup2_redirect.c:12:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

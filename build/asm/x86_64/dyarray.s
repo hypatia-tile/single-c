@@ -7,6 +7,7 @@
 _reallocate:                            ## @reallocate
 Lfunc_begin0:
 	.loc	0 14 0                          ## src/dyarray.c:14:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

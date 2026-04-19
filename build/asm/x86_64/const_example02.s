@@ -6,6 +6,7 @@
 _main:                                  ## @main
 Lfunc_begin0:
 	.loc	0 11 0                          ## src/const_example02.c:11:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

@@ -6,6 +6,7 @@ _main:                                  ## @main
 Lfunc_begin0:
 	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/simple1.c" md5 0x6ed96ec11b99146c9699002d80822e21
 	.loc	0 1 0                           ## src/simple1.c:1:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

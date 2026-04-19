@@ -6,6 +6,7 @@
 _main:                                  ## @main
 Lfunc_begin0:
 	.loc	0 5 0                           ## src/pipe_reader.c:5:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

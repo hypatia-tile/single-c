@@ -8,6 +8,7 @@
 _main:                                  ## @main
 Lfunc_begin0:
 	.loc	0 15 0                          ## src/ipc_pipe_select.c:15:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp

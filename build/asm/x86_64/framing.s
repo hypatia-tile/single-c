@@ -9,6 +9,7 @@
 _die:                                   ## @die
 Lfunc_begin0:
 	.loc	0 9 0                           ## src/framing.c:9:0
+	.cfi_sections .debug_frame
 	.cfi_startproc
 ## %bb.0:
 	pushq	%rbp
