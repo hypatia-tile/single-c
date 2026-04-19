@@ -1,5 +1,5 @@
 	.build_version macos, 26, 0	sdk_version 26, 2
-	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/foo.c" md5 0x82b25d96ead32e1dff748052d745c1a6
+	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/foo.c" md5 0x6b3d0bb8b42dcb9e5727cce9f08ebd76
 	.section	__TEXT,__text,regular,pure_instructions
 	.globl	_main                           ; -- Begin function main
 	.p2align	2
@@ -8,34 +8,25 @@ Lfunc_begin0:
 	.loc	0 4 0                           ; src/foo.c:4:0
 	.cfi_startproc
 ; %bb.0:
-	sub	sp, sp, #32
-	stp	x29, x30, [sp, #16]             ; 16-byte Folded Spill
-	add	x29, sp, #16
-	.cfi_def_cfa w29, 16
-	.cfi_offset w30, -8
-	.cfi_offset w29, -16
-Ltmp0:
-	.loc	0 5 13 prologue_end             ; src/foo.c:5:13
-	mov	x0, #5                          ; =0x5
-	bl	_malloc
-	.loc	0 5 9 is_stmt 0                 ; src/foo.c:5:9
-	str	x0, [sp, #8]
-	.loc	0 6 5 is_stmt 1                 ; src/foo.c:6:5
+	sub	sp, sp, #16
+	.cfi_def_cfa_offset 16
+	str	wzr, [sp, #12]
+Ltmp1:
+	.loc	0 5 9 prologue_end              ; src/foo.c:5:9
 	adrp	x8, l_.str@PAGE
 	add	x8, x8, l_.str@PAGEOFF
-	str	x8, [sp, #8]
-	.loc	0 7 3                           ; src/foo.c:7:3
-	ldr	x9, [sp, #8]
-	.loc	0 7 8 is_stmt 0                 ; src/foo.c:7:8
+	str	x8, [sp]
+	.loc	0 6 3                           ; src/foo.c:6:3
+	ldr	x9, [sp]
+	.loc	0 6 8 is_stmt 0                 ; src/foo.c:6:8
 	mov	w8, #72                         ; =0x48
 	strb	w8, [x9]
-	.loc	0 8 1 is_stmt 1                 ; src/foo.c:8:1
-	mov	w0, #0                          ; =0x0
-	.loc	0 8 1 epilogue_begin is_stmt 0  ; src/foo.c:8:1
-	ldp	x29, x30, [sp, #16]             ; 16-byte Folded Reload
-	add	sp, sp, #32
+	.loc	0 7 3 is_stmt 1                 ; src/foo.c:7:3
+	mov	w0, #-1                         ; =0xffffffff
+	.loc	0 7 3 epilogue_begin is_stmt 0  ; src/foo.c:7:3
+	add	sp, sp, #16
 	ret
-Ltmp1:
+Ltmp2:
 Lfunc_end0:
 	.cfi_endproc
                                         ; -- End function
@@ -130,6 +121,8 @@ Lsection_abbrev:
 	.byte	27                              ; DW_FORM_addrx
 	.byte	18                              ; DW_AT_high_pc
 	.byte	6                               ; DW_FORM_data4
+	.ascii	"\347\177"                      ; DW_AT_APPLE_omit_frame_ptr
+	.byte	25                              ; DW_FORM_flag_present
 	.byte	64                              ; DW_AT_frame_base
 	.byte	24                              ; DW_FORM_exprloc
 	.byte	3                               ; DW_AT_name
@@ -197,7 +190,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	2                               ; Abbrev [2] 0x25:0xa DW_TAG_variable
 	.long	47                              ; DW_AT_type
 	.byte	0                               ; DW_AT_decl_file
-	.byte	6                               ; DW_AT_decl_line
+	.byte	5                               ; DW_AT_decl_line
 	.byte	2                               ; DW_AT_location
 	.byte	161
 	.byte	0
@@ -219,8 +212,9 @@ Lset5 = Laddr_table_base0-Lsection_info0 ; DW_AT_addr_base
 	.byte	1                               ; DW_AT_low_pc
 Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
 	.long	Lset6
+                                        ; DW_AT_APPLE_omit_frame_ptr
 	.byte	1                               ; DW_AT_frame_base
-	.byte	109
+	.byte	111
 	.byte	7                               ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
 	.byte	4                               ; DW_AT_decl_line
@@ -228,8 +222,8 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ; DW_AT_high_pc
                                         ; DW_AT_external
 	.byte	8                               ; Abbrev [8] 0x52:0xb DW_TAG_variable
 	.byte	2                               ; DW_AT_location
-	.byte	143
-	.byte	8
+	.byte	145
+	.byte	0
 	.byte	9                               ; DW_AT_name
 	.byte	0                               ; DW_AT_decl_file
 	.byte	5                               ; DW_AT_decl_line

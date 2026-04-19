@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-  char* c = malloc(sizeof(char)*5);
-  c = "hello";
+  char* c = "hello";
   c[0] = 'H';
+  return -1;
 }

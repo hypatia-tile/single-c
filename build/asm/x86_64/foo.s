@@ -1,6 +1,6 @@
 	.build_version macos, 26, 0	sdk_version 26, 2
 	.section	__TEXT,__text,regular,pure_instructions
-	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/foo.c" md5 0x82b25d96ead32e1dff748052d745c1a6
+	.file	0 "/Users/kazukishinohara/ghqrepo/github.com/hypatia-tile/single-c" "src/foo.c" md5 0x6b3d0bb8b42dcb9e5727cce9f08ebd76
 	.globl	_main                           ## -- Begin function main
 	.p2align	4
 _main:                                  ## @main
@@ -14,24 +14,18 @@ Lfunc_begin0:
 	.cfi_offset %rbp, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register %rbp
-	subq	$16, %rsp
+	movl	$0, -4(%rbp)
 Ltmp0:
-	.loc	0 5 13 prologue_end             ## src/foo.c:5:13
-	movl	$5, %edi
-	callq	_malloc
-	.loc	0 5 9 is_stmt 0                 ## src/foo.c:5:9
-	movq	%rax, -8(%rbp)
-	.loc	0 6 5 is_stmt 1                 ## src/foo.c:6:5
+	.loc	0 5 9 prologue_end              ## src/foo.c:5:9
 	leaq	L_.str(%rip), %rax
-	movq	%rax, -8(%rbp)
-	.loc	0 7 3                           ## src/foo.c:7:3
-	movq	-8(%rbp), %rax
-	.loc	0 7 8 is_stmt 0                 ## src/foo.c:7:8
+	movq	%rax, -16(%rbp)
+	.loc	0 6 3                           ## src/foo.c:6:3
+	movq	-16(%rbp), %rax
+	.loc	0 6 8 is_stmt 0                 ## src/foo.c:6:8
 	movb	$72, (%rax)
-	.loc	0 8 1 is_stmt 1                 ## src/foo.c:8:1
-	xorl	%eax, %eax
-	.loc	0 8 1 epilogue_begin is_stmt 0  ## src/foo.c:8:1
-	addq	$16, %rsp
+	.loc	0 7 3 is_stmt 1                 ## src/foo.c:7:3
+	movl	$4294967295, %eax               ## imm = 0xFFFFFFFF
+	.loc	0 7 3 epilogue_begin is_stmt 0  ## src/foo.c:7:3
 	popq	%rbp
 	retq
 Ltmp1:
@@ -196,7 +190,7 @@ Lset5 = Laddr_table_base0-Lsection_info0 ## DW_AT_addr_base
 	.byte	2                               ## Abbrev [2] 0x25:0xa DW_TAG_variable
 	.long	47                              ## DW_AT_type
 	.byte	0                               ## DW_AT_decl_file
-	.byte	6                               ## DW_AT_decl_line
+	.byte	5                               ## DW_AT_decl_line
 	.byte	2                               ## DW_AT_location
 	.byte	161
 	.byte	0
@@ -228,7 +222,7 @@ Lset6 = Lfunc_end0-Lfunc_begin0         ## DW_AT_high_pc
 	.byte	8                               ## Abbrev [8] 0x52:0xb DW_TAG_variable
 	.byte	2                               ## DW_AT_location
 	.byte	145
-	.byte	120
+	.byte	112
 	.byte	9                               ## DW_AT_name
 	.byte	0                               ## DW_AT_decl_file
 	.byte	5                               ## DW_AT_decl_line
